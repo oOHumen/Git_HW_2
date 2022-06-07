@@ -1,0 +1,18 @@
+1. Summary:
+2. ID:
+3. Build Number:
+4. Priority:
+5. Severity:
+6. Assignee:
+7. Reported by:
+8. Reported on:
+9. Status:
+10. Environment:
+
+11. Precondition:
+12. Steps to reproduce:
+
+13. Expected Result:
+14. Actual Result:
+
+15. Attachments: 
