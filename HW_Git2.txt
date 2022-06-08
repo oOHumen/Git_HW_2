@@ -1,0 +1,93 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+git branch postman
+
+- Jmeter
+git branch jmeter
+
+- CheckLists
+git branch checklists
+
+- Bag Reports
+git branch bug_reports
+
+- SQL
+git branch sql
+
+- Charles
+git branch charles
+
+- Mobile testing
+git branch mobile_testing
+
+2. Запушить все ветки на внешний репозиторий
+git push --all origin
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+git checkout bug_reports
+touch bugReports.txt
+vi bugReports.txt
+i
+1. Summary:
+2. ID:
+3. Build Number:
+4. Priority:
+5. Severity:
+6. Assignee:
+7. Reported by:
+8. Reported on:
+9. Status:
+10. Environment:
+
+11. Precondition:
+12. Steps to reproduce:
+
+13. Expected Result:
+14. Actual Result:
+
+15. Attachments:
+esc
+:wq
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add bugReport.txt
+git commit -m "add bugReport.txt to commit"
+git push
+
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git pull origin main
+git merge bug_reports
+
+6. Запушить main на внешний репозиторий.
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+git checkout checklists
+touch checklistStructure.txt
+vi checklistStructure.txt
+i
+Structure of Checklists:
+1. Sequence of blocks, sections, pages, and elements to be tested
+2. Sequence of columns that determines on which devices/browsers to be tested
+3. List of testers who will be taking a part in the testing process
+4. Collunms that determine the status of checks: "Passed" "Failed" "Blocked" "In Progress" "Not run" "Skipped". Every status should be marked with color.
+5. Every cell with the status "Failed" or "Blocked" must have the link to the appropriate bug report.
+6. At the end of testing the cells with the status "Not run" or "In progress" mustn't exist.
+esc
+:wq
+
+8. Запушить структуру на внешний репозиторий
+git add checklistStructure.txt
+git commit -m "add file checklistStructure.txt to commit"
+git pusg -u origin checklists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main и мердж
+On the web repo press "Compare and pull request" button
+Add comment click on "Create pull request" button
+Click on "Merge pull request" button -> "Confirm merge"
+Pull request successfully merged and closed
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull
