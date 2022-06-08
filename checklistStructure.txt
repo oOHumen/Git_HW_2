@@ -1,0 +1,6 @@
+1. Sequence of blocks, sections, pages, and elements to be tested
+2. Sequence of columns that determines on which devices/browsers to be tested
+3. List of testers who will be taking a part in the testing process
+4. Collunms that determine the status of checks: "Passed" "Failed" "Blocked" "In Progress" "Not run" "Skipped". Every status should be marked with color.
+5. Every cell with the status "Failed" or "Blocked" must have the link to the appropriate bug report.
+6. At the end of testing the cells with the status "Not run" or "In progress" mustn't exist.
